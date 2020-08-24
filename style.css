@@ -1,0 +1,162 @@
+html {
+  font-family: "Quicksand", sans-serif;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #efefef;
+}
+
+header {
+  margin-left: 5.4em;
+  /* display: flex; */
+}
+
+nav {
+  display: flex;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 4em;
+  letter-spacing: 5px;
+  color: rgb(48, 49, 49);
+  background-color: rgb(250, 237, 124);
+  width: 26%;
+}
+
+h2 {
+  font-weight: 100;
+  color: rgb(233, 23, 23);
+  word-spacing: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 1.6rem;
+  margin-left: 10%;
+}
+li {
+  display: inline;
+  padding: 2rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(48, 49, 49);
+}
+
+a:hover {
+  color: rgba(43, 151, 214, 0.945);
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.video-header {
+  font-weight: 200;
+}
+
+.video {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 7rem;
+}
+
+.photos div {
+  height: 26.5rem;
+  width: 40rem;
+  border: 1px solid rgb(233, 23, 23);
+
+  margin: 3rem;
+}
+
+.video div {
+  height: 22.5rem;
+  width: 40rem;
+  border: 1px solid rgb(233, 23, 23);
+  margin: 3rem;
+}
+
+.video div:hover {
+  border: none;
+}
+
+img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.foto-img:hover {
+  filter: grayscale(100%);
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
+  box-shadow: 2px 4px 8px rgb(48, 49, 49);
+}
+
+.video {
+  position: relative;
+}
+
+.video-img:hover {
+  /* filter: grayscale(100%); */
+  /* opacity: 0.2; */
+  cursor: pointer;
+  transform: scale(1.08);
+  transition: all 0.4s ease-in-out;
+}
+
+.img-description {
+  position: absolute;
+  top: 30%;
+  font-weight: 500;
+  left: 30%;
+  color: rgb(233, 23, 23);
+  visibility: hidden;
+  font-size: 2.5rem;
+}
+
+.fallible {
+  top: 33%;
+  left: 25%;
+}
+
+.ramallah {
+  left: 16%;
+}
+
+.memory {
+  left: 23%;
+}
+
+.time {
+  left: 20%;
+}
+
+.video-img:hover .img-description {
+  visibility: visible;
+
+  /* opacity: 1; */
+}
+
+p a:hover {
+  color: rgb(233, 23, 23);
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 350px) {
+  h1 {
+    width: 48%;
+  }
+}
